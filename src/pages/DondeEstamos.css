@@ -1,0 +1,72 @@
+.donde-estamos {
+    padding: 4rem 2rem;
+    background-color: #fdfdfc;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+  
+  .donde-estamos h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: black; /* tono verde corporativo */
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
+
+  .donde-estamos h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #A2D072;
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+  }
+  
+  .contenedor-localizacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .mapa-bloque,
+  .video-bloque {
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .mapa-bloque iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .mapa-bloque p {
+    margin-top: 1rem;
+    color: #444;
+    font-size: 0.95rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .mapa-bloque p::before {
+    content: "📍";
+  }
+  
+  .video-bloque video {
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+  }
+  
