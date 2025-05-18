@@ -16,7 +16,6 @@ const Servicios = () => {
                     <ul>
                         <li><FaCheckCircle className="icono" /> Tratamientos Faciales y Corporales</li>
                         <li><FaCheckCircle className="icono" /> Depilación Láser Diodo</li>
-                        <li><FaCheckCircle className="icono" /> Depilación Tradicional</li>
                         <li><FaCheckCircle className="icono" /> Tratamiento HIFU</li>
                         <li><FaCheckCircle className="icono" /> Radiofrecuencia INDIBA</li>
                     </ul>

@@ -7,7 +7,7 @@ const servicios = [
   {
     titulo: 'Tratamientos Faciales y Corporales',
     descripcion: 'Limpieza profunda, hidratación, rejuvenecimiento y más.',
-    imagen: '',
+    imagen: 'https://cdn.euroinnova.edu.es/img/subidasEditor/est%C3%A9tica%201-1617422468.webp',
     precio: '35€',
     duracion: '50 min',
     whatsapp: true,
@@ -15,23 +15,15 @@ const servicios = [
   {
     titulo: 'Depilación Láser Diodo',
     descripcion: 'Tecnología eficaz y duradera para todo tipo de piel.',
-    imagen: '',
+    imagen: 'https://drvargas.co/wp-content/uploads/2023/08/dr-vargas-depilacion-laser-diodo.webp',
     precio: 'desde 25€',
     duracion: '30-60 min',
     whatsapp: true,
   },
   {
-    titulo: 'Depilación Tradicional',
-    descripcion: 'Cera caliente, tibia y técnica rápida para todo el cuerpo.',
-    imagen: '',
-    precio: 'desde 10€',
-    duracion: '20-40 min',
-    whatsapp: true,
-  },
-  {
     titulo: 'Tratamiento HIFU',
     descripcion: 'Reafirmación facial con ultrasonido focalizado.',
-    imagen: 'https://source.unsplash.com/360x200/?hifu',
+    imagen: 'https://laserluz.com/blog/wp-content/uploads/2023/11/Hifu-facial.webp',
     precio: 'desde 90€',
     duracion: '60 min',
     whatsapp: true,
@@ -39,7 +31,7 @@ const servicios = [
   {
     titulo: 'Radiofrecuencia INDIBA',
     descripcion: 'Tecnología avanzada para regeneración celular y lifting.',
-    imagen: 'https://source.unsplash.com/360x200/?indiba',
+    imagen: 'https://sensabell.com/wp-content/uploads/2023/09/indiba-rejuve-1024x630.jpg',
     precio: 'desde 75€',
     duracion: '45 min',
     whatsapp: true,
