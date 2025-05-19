@@ -77,7 +77,7 @@ categorias: []
     titulo: 'Tratamiento HIFU',
     descripcion: 'Reafirmación facial con ultrasonido focalizado.',
     imagen: 'https://laserluz.com/blog/wp-content/uploads/2023/11/Hifu-facial.webp',
-    precio: '90€',
+    precio: '120€',
     duracion: '60 min',
     whatsapp: true,
     detalleHtml: `
