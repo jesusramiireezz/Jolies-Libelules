@@ -1,135 +1,138 @@
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .modal-contenido {
-    background: white;
-    border-radius: 16px;
-    padding: 2rem;
-    max-width: 600px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .modal-cerrar {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-    color: #A2D072;
-    transition: color 0.3s ease;
-  }
-  
-  .modal-cerrar:hover {
-    color: #7fb855;
-  }
-  
-  .modal-categoria h3 {
-    color: #A2D072;
-    margin-top: 1rem;
-    font-size: 1.1rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 0.3rem;
-  }
-  
-  .modal-categoria ul {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0 1rem 0;
-  }
-  
-  .modal-categoria li {
-    font-size: 0.95rem;
-    margin-bottom: 0.3rem;
-    color: #444;
-  }
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+.modal-contenido h2 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333; 
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+}
 
-  .modal-contenido h2 {
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #333 !important; 
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-family: 'Quicksand', sans-serif;
-    position: relative;
-  }
-  
-  .modal-contenido h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #A2D072;
-    margin: 10px auto 0;
-    border-radius: 2px;
-  }
-  .modal-detalle {
-    margin-top: 1.5rem;
-    font-size: 0.95rem;
-    color: #444;
-    text-align: center;
-    padding: 0 1rem;
-  }
-  
-  .modal-detalle h3 {
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: #A2D072;
-    font-size: 1.05rem;
-    text-align: center;
-  }
-  
-  .modal-detalle ul {
-    list-style: none;
-    padding: 0;
-    margin: 0.5rem 0 1rem;
-    text-align: center;
-  }
-  
-  .modal-detalle ul li {
-    margin-bottom: 0.3rem;
-  }
-  .modal-contenido::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  .modal-contenido::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  .modal-contenido::-webkit-scrollbar-thumb {
-    background-color: #A2D072;
-    border-radius: 10px;
-  }
-  
-  .modal-contenido::-webkit-scrollbar-thumb:hover {
-    background-color: #8ac15e;
-  }
-  
-  /* Firefox */
-  .modal-contenido {
-    scrollbar-width: thin;
-    scrollbar-color: #A2D072 transparent;
-  }
-  
-  
-  
-  
+.modal-contenido h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #A2D072;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+
+.modal-contenido {
+  background: white;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #A2D072;
+  z-index: 10;
+}
+
+.modal-cerrar:hover {
+  color: #7fb855;
+}
+
+.modal-scroll {
+  padding: 2rem;
+  overflow-y: auto;
+  max-height: 100%;
+  padding-top: 3.2rem;
+  text-align: center;
+}
+
+/* Evita el scroll del fondo */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* --- DETALLE HTML CUSTOM --- */
+.modal-detalle {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+  margin-top: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
+
+/* Títulos dentro del HTML (usamos h3 normalmente) */
+.modal-detalle h3 {
+  color: #92c56f;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.modal-detalle ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 1rem;
+}
+
+.modal-detalle li {
+  margin-bottom: 0.4rem;
+}
+
+.modal-detalle strong {
+  font-weight: 600;
+  color: #444;
+}
+.modal-categoria {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.modal-categoria h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #A2D072;
+  margin-bottom: 0.5rem;
+}
+
+.modal-categoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-categoria li {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.4rem;
+}
+
+.modal-categoria li strong {
+  font-weight: 600;
+}

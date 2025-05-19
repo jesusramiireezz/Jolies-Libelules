@@ -33,7 +33,7 @@ const servicios = [
     titulo: 'Depilación Láser Diodo',
     descripcion: 'Tecnología eficaz y duradera para todo tipo de piel.',
     imagen: 'https://drvargas.co/wp-content/uploads/2023/08/dr-vargas-depilacion-laser-diodo.webp',
-    precio: 'desde 13€',
+    precio: '13€',
     duracion: '30-60 min',
     whatsapp: true,
     detalleHtml: `
@@ -77,7 +77,7 @@ categorias: []
     titulo: 'Tratamiento HIFU',
     descripcion: 'Reafirmación facial con ultrasonido focalizado.',
     imagen: 'https://laserluz.com/blog/wp-content/uploads/2023/11/Hifu-facial.webp',
-    precio: 'desde 90€',
+    precio: '90€',
     duracion: '60 min',
     whatsapp: true,
     detalleHtml: `
@@ -120,7 +120,7 @@ categorias: []
     titulo: 'Radiofrecuencia INDIBA',
     descripcion: 'Tecnología avanzada para regeneración celular y lifting.',
     imagen: 'https://sensabell.com/wp-content/uploads/2023/09/indiba-rejuve-1024x630.jpg',
-    precio: 'desde 75€',
+    precio: '75€',
     duracion: '45 min',
     whatsapp: true,
     detalleHtml: `
