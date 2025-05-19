@@ -8,7 +8,7 @@ function Hero() {
                 <h1>Tu piel, tu momento.</h1>
                 <p>Centro de belleza y estética avanzada.</p>
                 <a
-                    href="https://wa.me/34600123456"
+                    href="https://wa.me/34672075100"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-whatsapp"

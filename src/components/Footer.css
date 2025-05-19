@@ -53,14 +53,13 @@
     color: #888;
   }
   
-  /* MEDIA QUERY para móviles: convierte en 2 columnas */
   @media (max-width: 600px) {
     .footer-links {
       display: grid;
-      grid-template-columns: repeat(2, auto);
+      grid-template-columns: 1fr 1fr;
       row-gap: 1rem;
       column-gap: 2rem;
-      justify-content: center;
+      justify-items: center;
+      text-align: center;
     }
   }
-  

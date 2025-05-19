@@ -1,65 +1,134 @@
 .servicio-card {
-    background-color: #fff;
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-    text-align: center;
-    transition: transform 0.3s ease;
-    max-width: 350px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 520px; /* ESTO fuerza igualdad entre cards */
+}
+
+.card-contenido {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.4rem;
+}
+
+.card-botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  margin-bottom: -0.5rem;
+}
+
+.servicio-imagen {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #f0f0f0;
+  display: block;
+}
+
+.servicio-card h3 {
+  color: #A2D072;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+.servicio-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.precio {
+  font-weight: 600;
+  color: #333;
+}
+
+.duracion {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.boton-reservar {
+  background-color: #A2D072;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+}
+
+.boton-reservar:hover {
+  background-color: #8ac15e;
+}
+
+.boton-detalles {
+  background-color: #f4fdf1;
+  color: #76b65d;
+  border: 1px solid #d2edc3;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.35rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.boton-detalles:hover {
+  background-color: #eafbe3;
+  color: #5da44c;
+  border-color: #bde5a7;
+}
+
+@media (max-width: 768px) {
+  .servicios-grid {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .servicio-card:hover {
-    transform: translateY(-6px);
+
+  .servicio-card {
+    max-width: 90%;
+    min-height: auto;
+    padding: 1.5rem;
   }
-  
+
   .servicio-imagen {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 1rem;
-    background-color: #f0f0f0; /* fallback por si no carga la imagen */
-    display: block;
+    height: 160px;
   }
-  
-  .servicio-card h3 {
-    color: #A2D072;
-    font-size: 1.4rem;
-    margin-bottom: 0.7rem;
-    font-weight: 600;
-  }
-  
-  .servicio-card p {
-    margin: 0.4rem 0;
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-  
-  .precio {
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .duracion {
-    font-style: italic;
-    font-size: 0.9rem;
-    color: #666;
-  }
-  
+
   .boton-reservar {
-    display: inline-block;
-    margin-top: 1rem;
-    background-color: #A2D072;
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+    width: 50%;
+    font-size: 1rem;
   }
-  
-  .boton-reservar:hover {
-    background-color: #8ac15e;
+
+  .boton-detalles {
+    width: 50%;
+    font-size: 0.9rem;
   }
-  
+
+  .card-botones {
+    width: 100%;
+    gap: 0.5rem;
+  }
+}
