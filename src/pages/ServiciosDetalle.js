@@ -120,7 +120,7 @@ categorias: []
     titulo: 'Radiofrecuencia INDIBA',
     descripcion: 'Tecnología avanzada para regeneración celular y lifting.',
     imagen: 'https://sensabell.com/wp-content/uploads/2023/09/indiba-rejuve-1024x630.jpg',
-    precio: '75€',
+    precio: '65€',
     duracion: '45 min',
     whatsapp: true,
     detalleHtml: `
