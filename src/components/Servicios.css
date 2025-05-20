@@ -88,6 +88,13 @@
   color: #777;
   margin-top: 0.3rem;
 }
+.subtitulo-servicio {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
 
 .cta-alquiler {
   margin-top: 1.2rem;

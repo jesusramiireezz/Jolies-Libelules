@@ -26,6 +26,7 @@ const Servicios = () => {
                     <h3>
                         <span className="icono-titulo">🧴</span> Alquiler de Aparatología
                     </h3>
+                    <p className="subtitulo-servicio">Tecnología estética de última generación · 2025</p>
                     <ul>
                         <li><FaCheckCircle className="icono" /> INDIBA ONE</li>
                         <li><FaCheckCircle className="icono" /> Láser Diodo Milesman</li>
@@ -41,8 +42,8 @@ const Servicios = () => {
                     >
                         Más info
                     </a>
-
                 </div>
+
 
             </div>
         </section>
