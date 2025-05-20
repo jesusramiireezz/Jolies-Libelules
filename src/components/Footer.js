@@ -18,11 +18,11 @@ const Footer = () => {
                     <Link to="/contacto">Contacto</Link>
                 </div>
                 <div className="footer-social">
-                    <a href="https://www.instagram.com/jolieslibelules" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="social-icon" />
-                    </a>
                     <a href="https://wa.me/34672075100?text=Hola%20me%20gustar%C3%ADa%20pedir%20cita%20para%20un%20tratamiento" target="_blank" rel="noopener noreferrer">
                         <FaWhatsapp className="social-icon" />
+                    </a>
+                    <a href="https://www.instagram.com/jolieslibelules" target="_blank" rel="noopener noreferrer">
+                        <FaInstagram className="social-icon" />
                     </a>
                 </div>
             </div>

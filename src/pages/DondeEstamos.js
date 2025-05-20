@@ -5,6 +5,9 @@ const DondeEstamos = () => {
   return (
     <section className="donde-estamos">
       <h2>Dónde encontrarnos</h2>
+      <p className="seo-location">
+  Estamos en Carrer del Poble Espanyol, 20 (Palma de Mallorca). <span className="marca-verde">Jolies Libelules</span> es tu centro de belleza de confianza en Palma, especializado en tratamientos estéticos como HIFU e INDIBA.
+</p>
 
       <div className="contenedor-localizacion">
         <div className="mapa-bloque">

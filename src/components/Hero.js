@@ -6,7 +6,13 @@ function Hero() {
         <section className="hero-split-limited">
             <div className="hero-text">
                 <h1>Tu piel, tu momento.</h1>
-                <p>Centro de belleza y estética avanzada.</p>
+                <h2 className="seo-subtitle">
+                    Centro de belleza en Palma de Mallorca – Estética avanzada con HIFU, INDIBA y más
+                </h2>
+                <p>
+                    En <span className="marca-verde">Jolies Libelules</span> te ofrecemos tratamientos faciales y corporales personalizados para cuidar tu piel con tecnología de última generación.
+                </p>
+
                 <a
                     href="https://wa.me/34672075100"
                     target="_blank"
@@ -32,11 +38,9 @@ function Hero() {
                     </svg>
                 </a>
             </div>
-
-
         </section>
-
     );
 }
+
 
 export default Hero;
